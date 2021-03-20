@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Programa Olá Você!</h1>
+    <p>Nome: <br> <input type="text" id="nome">
+        <input type="button" value="Mostrar"b  onclick="mostrarOla()">
+    </p>
+    <p id="resposta"></p>
+    <p id="resposta2"></p>
+    <!--O texto sera mudado. OBS: nn a nada escrito mas se tivesse seria mudado e quando a minha funçao for funcionar o texto sera mudado-->
+
+
+    <script>
+        function mostrarOla() {
+            var nome = document.getElementById("nome").value;
+            document.getElementById("resposta").textContent = 'Olá ' + nome;
+            document.getElementById("resposta2").innerHTML = 'Olá ' + nome;
+        }
+    /*Deu na mesma textContent ou innerHTML */
+    </script>
+</body>
+
+</html>
